@@ -3,7 +3,7 @@ import './insta.css'
 
 export default function Card({ item }) {
     // console.log(item);
-    const id = item._id
+    // const id = item._id
     return <>
         <div data-testid={item.name} className="card">
             <h4>{item.name}</h4>
@@ -11,7 +11,7 @@ export default function Card({ item }) {
             <svg xmlns="http://www.w3.org/2000/svg" className='menu-btn' viewBox="0 0 16 16">
                 <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
             </svg>
-            <img className='post-img' src={item.postImage} alt="some image" />
+            <img className='post-img' src={item.postImage} alt="post" />
             <div className='likes-container' >
                 <svg xmlns="http://www.w3.org/2000/svg" className='send w-50 m-3' viewBox="0 0 16 16">
                     <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />

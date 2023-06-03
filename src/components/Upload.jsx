@@ -33,8 +33,8 @@ function Upload() {
                     </FloatingLabel>
                     <Button variant="primary" type='submit' size="lg" className='w-25'>Post</Button>
                 </form>
-                <Outlet/>
             </div>
+                <Outlet/>
          </section>
     )
 }

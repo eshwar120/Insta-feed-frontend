@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 
 export default function FirstPage() {
     return <>
@@ -6,6 +6,7 @@ export default function FirstPage() {
             <img id="logo" src="./images/instagram.png" alt="insta-logo" />
             <Link to="/home"><button id="enter-btn">Enter</button></Link>
         </nav>
+        <Outlet/>
     </>
 
 }
