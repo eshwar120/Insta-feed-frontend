@@ -1,10 +1,10 @@
 import React from 'react'
-import { Outlet , Link} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './insta.css'
 
 function NavBar() {
     return (
-        <header className='fixed-top border-bottom'>
+        <header className='fixed-top '>
             <nav id="landing-nav" >
                 {/* <img id="logo-small" src="./images/insta.png" alt="insta-logo" /> */}
                 <Link to="/home"><img id="logo-small" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/instagram_logo_icon_170643.png" alt="insta-logo" /></Link>
