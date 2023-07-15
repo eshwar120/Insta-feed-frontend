@@ -1,22 +1,17 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import Card from './Card'
 import './insta.css'
-import GetApiUtils from './GetApiUtils';
-import { Outlet , Link} from 'react-router-dom';
+import { DataContext } from '../context/DataContext';
 
 
 export default function LandingPage() {
-    const [data, setData] = useState([]);
-    const updateData = (newData) => {
-        setData(newData);
-    }
+    
+    const {data} = useContext(DataContext);
     return <div className='feed'>
-            <GetApiUtils updateData={updateData} />
             {
                 data.map((item, index) => {
                     return <Card key={index} item={item}/>
                 })
             }
-        <Outlet/>
     </div>
 }
