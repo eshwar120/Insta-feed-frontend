@@ -1,16 +1,29 @@
-// import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
-// import Routes from './components/Routes/Routes';
+import { DataContextProvider } from './context/DataContext';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';;
 
-
-// import  from 'react-router-dom'
 
 function App() {
 
   
   return (
-    <Home/>
+    <DataContextProvider>
+      <ToastContainer 
+                position="top-center"
+                autoClose={4000}
+                limit={3}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored" />
+      <Home/>
+    </DataContextProvider>
   );
 }
 
